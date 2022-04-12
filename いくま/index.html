@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Instagram ログイン</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <h1><span>Life's</span> Good</h1>
+    <input placeholder="Username" type="text"/>
+    <input placeholder="Password" type="password"/>
+    <button class="btn">Log in</button>
+    <h6>Oh, social?</h6>
+    <div class="social">
+    <button class="tw btn">Twitter</button>
+    <button class="fb btn">Facebook</button>
+    <button class="google fb btn">Google+</button>
+    </div>
+  </form>
+  
+  <footer>
+    <h5>Right click and visit: <a target="_blank" href="http://lifes.gd">Life's Good</a></h5>
+  </footer>
+</body>
+
+
+<script>
+$(document).ready(function(e){
+    $('h6').on('click',function(){
+       $('.social').stop().slideToggle();
+    });
+ })
+</script>
+
+</html>
